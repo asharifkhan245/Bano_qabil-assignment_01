@@ -1,19 +1,24 @@
 //question 1
 
-// const str = 'Hello, world';
-// let reversedString = '';
+var str = 'Hello, world';
+let reversedString = '';
 
-// for (let i = str.length - 1; i >= 0; i--) {
-//   reversedString += str[i];
-// }
+for (let i = str.length - 1; i >= 0; i--) {
+  reversedString += str[i];
+}
 
-// console.log(reversedString);
+console.log(reversedString);
+
+
+
+
+
 
 
 //question 2 
 
-const text = 'bano qabil';
-const vowels = 'aeiouAEIOU';
+let text = 'bano qabil';
+let vowels = 'aeiouAEIOU';
 let count = 0;
 
 for (let i = 0; i < text.length; i++) {
@@ -28,48 +33,51 @@ console.log(`Number of vowels in "${text}" is: ${count}`);
 
 // queston 3
 
-// const str = 'hello world';
+let str = 'hello world';
 
-// const toArry = str.split(' ');
+let toArry = str.split(' ');
 
-// toArry.map(item => {
-//   const cv = item.charAt(0).toUpperCase() + str.slice(1);
-//   console.log(cv);
-// });
+toArry.map(item => {
+  let cv = item.charAt(0).toUpperCase() + str.slice(1);
+  console.log(cv);
+});
 
 
 // question 4
-// const str = 'civic';
+let str = 'civic';
 
-// const rev = str.split('').reverse().join('');
+let rev = str.split('').reverse().join('');
 
-// if (str === rev) {
-//   console.log('its palindrome');
-// } else {
-//   console.log('its not palindrome');
-// }
+if (str === rev) {
+  console.log('its palindrome');
+} else {
+  console.log('its not palindrome');
+}
+
+
+
 
 
 // question 5
-// const arr = [1, -1, -7, 100, -100, 67];
-// console.log(arr.filter(e=>e>0));
+var arr = [1, -1, -7, 100, -100, 67];
+console.log(arr.filter(e=>e>0));
 
 // question 06
-// const array = [10, 20, 30, 40, 50, 30];
-// const elementToFind = 30;
-// const firstIndex = array.indexOf(elementToFind);
+let array = [10, 20, 30, 40, 50, 30];
+let elementToFind = 30;
+let firstIndex = array.indexOf(elementToFind);
 
-// if (firstIndex !== -1) {
-//   console.log(`The first occurrence of ${elementToFind} is at index ${firstIndex}`);
-// } else {
-//   console.log(`The element ${elementToFind} is not found in the array`);
-// }
+if (firstIndex !== -1) {
+  console.log(`The first occurrence of ${elementToFind} is at index ${firstIndex}`);
+} else {
+  console.log(`The element ${elementToFind} is not found in the array`);
+}
 
 
 // Question 7 
-// const arr = ['1', '2', '3', '3', 4, '5', 3, '2', 1];
-// const newArr = arr.filter((value, index) => arr.indexOf(value) == index);
-// console.log(newArr);
+var arr = ['1', '2', '3', '3', 4, '5', 3, '2', 1];
+let newArr = arr.filter((value, index) => arr.indexOf(value) == index);
+console.log(newArr);
 
 //queston no 08
 // function sortAscending(arr) {
@@ -85,8 +93,8 @@ console.log(`Number of vowels in "${text}" is: ${count}`);
 //     return arr;
 //   }
   
-//   const array = [5, 3, 9, 1, 6, 9, 10];
-//   const sortedAscending = sortAscending(array.slice());
+//   let array = [5, 3, 9, 1, 6, 9, 10];
+//   let sortedAscending = sortAscending(array.slice());
 //   console.log("Ascending ", sortedAscending);
   
 
@@ -104,7 +112,7 @@ console.log(`Number of vowels in "${text}" is: ${count}`);
 //     return arr;
 //   }
   
-//   const sortedDescending = sortDescending(array.slice());
+//   let sortedDescending = sortDescending(array.slice());
 //   console.log("Descending", sortedDescending);
   
 
@@ -143,14 +151,14 @@ console.log(`Number of vowels in "${text}" is: ${count}`);
 //     return factorial;
 //   }
   
-//   const num = 5; 
-//   const result = calculateFactorial(num);
+//   let num = 5; 
+//   let result = calculateFactorial(num);
 //   console.log(`The factorial of ${num} is: ${result}`);
 
 
 // question 11
 
-// const person = {
+// let person = {
 //     name: 'John Doe',
 //     age: 30,
 //     email: 'john@example.com'
@@ -163,10 +171,10 @@ console.log(`Number of vowels in "${text}" is: ${count}`);
 
 // question 12
 
-// const originalArray = [1, 2, 3, 4, 5];
-// const doubledArray = [];
+// let originalArray = [1, 2, 3, 4, 5];
+// let doubledArray = [];
 
-// for (const element of originalArray) {
+// for (let element of originalArray) {
 //   doubledArray.push(element * 2);
 // }
 
@@ -176,37 +184,38 @@ console.log(`Number of vowels in "${text}" is: ${count}`);
 
 //question 13
 
-// function checkEvenOrOdd(number) {
-//     if (number % 2 === 0) {
-//       return `${number} is even.`;
+// function evenOrOdd(num) {
+//     if (num % 2 === 0) {
+//       return `${num} is even.`;
 //     } else {
-//       return `${number} is odd.`;
+//       return `${num} is odd.`;
 //     }
 //   }
   
 //   // Example usage:
-//   const num1 = 7;
-//   const num2 = 12;
+//   let num1 = 7;
+//   let num2 = 12;
   
-//   console.log(checkEvenOrOdd(num1)); // Output: "7 is odd."
-//   console.log(checkEvenOrOdd(num2)); // Output: "12 is even."
+//   console.log(evenOrOdd(num1)); // Output: "7 is odd."
+//   console.log(evenOrOdd(num2)); // Output: "12 is even."
 
 
 
 // question 14
 
 
-// function findMaxOfThree(num1, num2, num3) {
-//     const max = num1 > num2 ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
+// function maxVal(num1, num2, num3) {
+//     let max = num1 > num2 ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
 //     return `The maximum of ${num1}, ${num2}, and ${num3} is: ${max}`;
 //   }
   
 //   // Example usage:
-//   const a = 10;
-//   const b = 5;
-//   const c = 8;
+//   let a = 10;
+//   let b = 5;
+//   let c = 8;
   
-//   console.log(findMaxOfThree(a, b, c)); 
+//   console.log(maxVal(a, b, c));
+ 
 
 
 // question 15
@@ -219,7 +228,7 @@ console.log(`Number of vowels in "${text}" is: ${count}`);
 //     }
 //   }
   
-//   const yearToCheck = 2024;
+//   let yearToCheck = 2024;
 //   console.log(isLeapYear(yearToCheck));
   
   
